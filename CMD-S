@@ -355,7 +355,7 @@ while not RunDude do wait() end
 
 wait(.5)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Version.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devk94/CMD-S/main/VERSION?token=GHSAT0AAAAAACHE4ZCO3P4ZCCZQZHSCIVQEZJHQJDA",true))()
 if Current and Current.Version ~= ver then
 	Stand("CMD-X is not up to par!","CMD-X cannot run.","","Your version: "..ver,"Current version: "..Current.Version,"Run Anyway",true)
 	while not RunDude do
@@ -3428,7 +3428,7 @@ end
 task.spawn(suggestions_update)
 
 if KeepCMDXOn and syn.queue_on_teleport then
-	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()')
+	syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/devk94/CMD-S/main/CMD-S?token=GHSAT0AAAAAACHE4ZCORZ7MA27UOVZ7Y6AUZJHQEPA"))()')
 end
 
 rejoining = false
@@ -4467,7 +4467,7 @@ local cmdAdvertise = false
 function useCommand.advertise()
 	cmdAdvertise = true
 	while cmdAdvertise do
-		local str = "Get CMD X today! Best admin GUI, supports paid executors! type in cmd-x on google!"
+		local str = "Get CMD S today! Best admin GUI, supports paid executors! type in cmd-s on google!"
 		sayremote:FireServer(str, "All")
 		wait(math.random(1, 6)) 
 		local randomPlayer = cmdp:GetPlayers()[math.random(2,#cmdp:GetPlayers())]
@@ -4488,16 +4488,16 @@ function useCommand.advertise()
 		local randomPlayer = cmdp:GetPlayers()[math.random(2,#cmdp:GetPlayers())]
 		cmdlp.Character.Humanoid:MoveTo(randomPlayer.Character.HumanoidRootPart.Position)
 	end
-	opx("-","Now advertising CMD-X (Thank you!)")
+	opx("-","Now advertising CMD-S (Thank you!)")
 end
 
 function useCommand.unadvertise()
 	cmdAdvertise = false
-	opx("-","Stopped advertising CMD-X (Thank you!)")
+	opx("-","Stopped advertising CMD-S (Thank you!)")
 end
 
 function useCommand.version()
-	opx("-","CMD-X is currently on "..ver)
+	opx("-","CMD-S is currently on "..ver)
 end
 
 function useCommand.maxslopeangle()
