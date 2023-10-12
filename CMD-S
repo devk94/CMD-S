@@ -355,7 +355,7 @@ while not RunDude do wait() end
 
 wait(.5)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/devk94/CMD-S/main/VERSION?token=GHSAT0AAAAAACHE4ZCO3P4ZCCZQZHSCIVQEZJHQJDA",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devk94/CMD-S/main/VERSION",true))()
 if Current and Current.Version ~= ver then
 	Stand("CMD-X is not up to par!","CMD-X cannot run.","","Your version: "..ver,"Current version: "..Current.Version,"Run Anyway",true)
 	while not RunDude do
